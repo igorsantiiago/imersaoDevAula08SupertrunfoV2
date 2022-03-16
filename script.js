@@ -197,12 +197,6 @@ function exibirCartaMaquina() {
 //     divCartaMaquina.innerHTML = nome + tagHTML + opcoesTexto + "</div>";
 // }
 
-function finalDoJogo() {
-    var btnJogar = document.getElementById("btnJogar");
-    btnJogar.innerHTML = "Reiniciar Jogo";
-    btnJogar.setAttribute("onclick", "reiniciarJogo()");
-}
-
 function reiniciarJogo() {
     var divCartaJogador = document.getElementById("carta-jogador")
     divCartaJogador.innerHTML = "";
