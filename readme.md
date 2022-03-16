@@ -16,5 +16,5 @@ Desafios
 - Desenvolver um sistema em que cada carta que um jogador ganhe, ele fique com a carta do oponente e vice versa;
 - Utilizar alguma temática para o projeto.
 
-Link do projeto hospedado no GitHub: 
+Link do projeto hospedado no GitHub: https://igorsantiiago.github.io/imersaoDevAula08SupertrunfoV2/
 
