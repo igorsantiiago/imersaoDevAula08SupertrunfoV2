@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+
+        <title>Super trunfo - Imersão Dev - Aula 07</title>
+        
+    </head>
+
+    <body>
+        <main>
+
+            <div class="container">
+                <a href="https://alura.com.br/" target="_blank">
+                    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="page-logo">
+                    <h1 class="page-logo-text">Verso</h1>
+                </a>
+                
+
+                <h2 class="page-title">Super Trunfo</h2>
+                <p class="page-descrition">Clique no botão "Sortear Carta" e escolha um atributo</p>
+                <p class="page-descrition">Obs: Os dados a seguir não correspondem com a realidade, sendo eles gerados automaticamente</p>
+
+                <button onclick="sortearCarta()" id="btnSortear">Sortear Carta</button>
+                <!-- <button type="button" id="btnJogar" onClick="jogar()" disabled="false">Jogar</button> -->
+                
+            </div>  
+
+            <div id="resultado"></div>  
+            
+            <div class="wrapper">
+                <div class="carta-background">
+                    <div id="carta-jogador">
+                        <h3></h3>
+                    </div>
+                </div>
+
+                <div class="carta-background">
+                    <div id="carta-maquina" class="carta">
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="opcoes" id="opcoes"></div>  
+        </main>
+    </body>
+</html>

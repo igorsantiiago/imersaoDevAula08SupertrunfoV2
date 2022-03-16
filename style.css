@@ -1,0 +1,186 @@
+html {
+    border: 10px solid hsl(0, 0%, 7%, 0.65);
+    min-height: 97.8vh;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;  
+    background: linear-gradient(35deg, rgba(5, 34, 95), rgba(0, 0, 10), rgb(5, 57, 146), rgba(5, 34, 95), rgba(0, 0, 10), rgba(5, 34, 95));
+    background-size: 500% 500%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*Área topo da tela (Logo, título, subtítulo e botão)*/
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-logo {
+    width: 15%;
+}
+
+.page-logo-text {
+    font-family: 'Pacifico', cursive;
+    color: #f1f1f1;
+    font-size: 3rem;
+    display: inline;
+    text-align: center; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-title {
+    color: #f1f1f1;
+    font-size: 2rem;
+    margin: 3vh 0 2vh 0;
+}
+
+.page-descrition {
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+button {
+    padding: .8rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 15vw;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+button:active {
+    opacity: .6;
+    transform: scale(.7);
+    transition: .2s all
+}
+
+/*Área resultado*/
+
+.resultado-final {
+    margin-top: -20px;
+    margin-bottom: -15px;
+    color: #f1f1f1;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*Área de cartas*/
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    margin-top: 2vh;
+    margin-left: 19vw;
+}
+
+.carta-background {
+    background: hsl(0, 0%, 7%, 0.65);
+    border: 2px dotted #f1f1f1;
+    border-radius: 40px;
+    width: 20vw;
+    height: 50vh;
+    transition: .5s ease-in;
+}
+
+.carta-background:hover {
+    margin: -5px;
+    zoom:105%;
+}
+
+/*Imagem Jogador / Máquina*/
+.carta-jogador, .carta-maquina {
+    border-radius: 50px;
+    border: 2px solid #f1f1f1 ;
+    width: 100px;
+    height: 100px;
+    margin-top: 4vh;
+    margin-left: 33%;
+}
+/**/
+
+.carta-jogador:hover, .carta-maquina:hover {
+    opacity: .8;
+}
+
+.carta-subtitle {
+    color: #f1f1f1;
+    margin-top: 3vh;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.carta-status {
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    justify-items: left;
+    line-height: 3rem;
+    margin: 30px 10px 10px 25%;
+}
+
+
+@media (max-width: 1220px) {
+
+    button {
+        width: 50vw;
+    }
+
+    .wrapper {
+        width: 90vw;
+        margin-left: 2vw;
+    }
+
+    .carta-background {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .carta-jogador, .carta-maquina {
+        margin-left: 20%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .carta-subtitle {
+        font-size: .9rem;
+    }
+
+    .carta-status {
+        font-size: .9rem;
+        line-height: 2.3rem;
+        margin: 0px 10px 0px 5%;
+    }
+
+
+    .resultado-final {
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+
+
+}
